@@ -1,0 +1,60 @@
+:root{--bg:#F3F5F8;--ink:#172033;--muted:#566075;--accent:#1F3FD6;--line:#D3DAE6;--panel:#E8ECF3;
+--head:"Bricolage Grotesque",system-ui,sans-serif;--body:"Newsreader",Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1424;--ink:#E8ECF4;--muted:#9AA5BC;--accent:#92A6FF;--line:#262E47;--panel:#171E34}}
+*{box-sizing:border-box}
+html{scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.125rem/1.65 var(--body)}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+header.site{border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem 2rem;padding-top:1.25rem;padding-bottom:1.25rem}
+.brand{font:700 1.25rem var(--head);color:var(--ink);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;font:500 1rem var(--head)}
+nav a{color:var(--muted);text-decoration:none;padding:.15rem 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink)}
+nav a[aria-current=page]{color:var(--ink);border-color:var(--accent)}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h1{font-size:clamp(2.25rem,5vw,3.5rem);letter-spacing:-.02em}
+main{padding:3.5rem 0 5rem}
+.lede{color:var(--muted);max-width:40rem;margin:1rem 0 0}
+/* home: the same sentence in four languages */
+.hero{display:grid;gap:0;margin:0 0 3rem;padding:0;list-style:none}
+.hero li{display:grid;grid-template-columns:3rem 1fr;align-items:baseline;border-top:1px solid var(--line);padding:.35rem 0}
+.hero li:last-child{border-bottom:1px solid var(--line)}
+.hero span{font:500 1rem var(--head);color:var(--muted)}
+.hero p{margin:0;font:700 clamp(1.75rem,5.5vw,3.75rem)/1.15 var(--head);letter-spacing:-.02em}
+.hero li:first-child p{color:var(--accent)}
+@media (prefers-reduced-motion:no-preference){.hero li{animation:in .7s both}.hero li:nth-child(2){animation-delay:.15s}.hero li:nth-child(3){animation-delay:.3s}.hero li:nth-child(4){animation-delay:.45s}}
+@keyframes in{from{opacity:0;transform:translateY(.5rem)}}
+.intro{display:grid;gap:2rem;grid-template-columns:1fr}
+@media (min-width:48rem){.intro{grid-template-columns:2fr 1fr}}
+.intro p{margin:0 0 1rem;max-width:38rem}
+.links{list-style:none;margin:0;padding:0;font:500 1.05rem var(--head)}
+.links li{padding:.5rem 0;border-top:1px solid var(--line)}
+.links a{text-decoration:none}
+.links a:hover{text-decoration:underline}
+/* videos */
+.grid{display:grid;gap:2.5rem 1.5rem;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));margin-top:2.5rem}
+.video{aspect-ratio:16/9;background:var(--panel);border-radius:4px;overflow:hidden}
+.video iframe{width:100%;height:100%;border:0;display:block}
+.grid h3{font-size:1.2rem;margin:.75rem 0 .15rem}
+.grid p{margin:0;color:var(--muted);font-size:1rem}
+/* writing */
+.pieces{list-style:none;margin:2.5rem 0 0;padding:0}
+.pieces li{display:grid;gap:.25rem 2rem;grid-template-columns:1fr;padding:1.5rem 0;border-top:1px solid var(--line)}
+@media (min-width:48rem){.pieces li{grid-template-columns:9rem 1fr}}
+.pieces time,.pieces .where{color:var(--muted);font:500 1rem var(--head)}
+.pieces h3{font-size:1.4rem}
+.pieces h3 a{color:var(--ink);text-decoration:none}
+.pieces h3 a:hover{color:var(--accent);text-decoration:underline}
+.pieces p{margin:.35rem 0 0;max-width:40rem}
+/* photography */
+.photos{columns:18rem;column-gap:1rem;margin-top:2.5rem}
+.photos figure{margin:0 0 1rem;break-inside:avoid;background:var(--panel);border-radius:4px;overflow:hidden}
+.photos img{display:block;width:100%;height:auto;min-height:10rem;color:transparent}
+.photos figcaption{padding:.5rem .75rem;color:var(--muted);font-size:1rem}
+/* contact */
+.mail{font:700 clamp(1.5rem,4.5vw,2.75rem) var(--head);letter-spacing:-.02em;word-break:break-all}
+footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:1rem}
+footer.site .wrap{padding-top:1.5rem;padding-bottom:2rem}
