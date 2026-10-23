@@ -20,7 +20,7 @@ main{padding:3.5rem 0 5rem}
 .lede{color:var(--muted);max-width:40rem;margin:1rem 0 0}
 /* home: the same sentence in four languages */
 .hero{display:grid;gap:0;margin:0 0 3rem;padding:0;list-style:none}
-.hero li{display:grid;grid-template-columns:3rem 1fr;align-items:baseline;border-top:1px solid var(--line);padding:.35rem 0}
+.hero li{border-top:1px solid var(--line);padding:.35rem 0}
 .hero li:last-child{border-bottom:1px solid var(--line)}
 .hero span{font:500 1rem var(--head);color:var(--muted)}
 .hero p{margin:0;font:700 clamp(1.75rem,5.5vw,3.75rem)/1.15 var(--head);letter-spacing:-.02em}
