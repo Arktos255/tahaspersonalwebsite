@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Self-Destructing Art — Taha Başdemir</title>
-<meta name="description" content="Essay by Taha Başdemir on self-destructing art, auto-destructive art, and the role of destruction in contemporary artistic practice.">
+<meta name="description" data-i18n="autoDescription" content="Essay by Taha Başdemir on self-destructing art, auto-destructive art, and the role of destruction in contemporary artistic practice.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F3FD6'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ET%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,21 +14,22 @@
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="index.html">Taha Başdemir</a>
-<nav aria-label="Main">
-<a href="index.html">Home</a>
-<a href="videos.html">Videos</a>
-<a href="writing.html" aria-current="page">Writing</a>
-<a href="photography.html">Photography</a>
-<a href="contact.html">Contact</a>
+<nav aria-label="Main" data-i18n-aria-label="navLabel">
+<a href="index.html" data-i18n="navHome">Home</a>
+<a href="videos.html" data-i18n="navVideos">Videos</a>
+<a href="writing.html" aria-current="page" data-i18n="navWriting">Writing</a>
+<a href="photography.html" data-i18n="navPhotography">Photography</a>
+<a href="contact.html" data-i18n="navContact">Contact</a>
 </nav>
+<label class="language-switcher"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select id="language-selector" aria-label="Language" data-i18n-aria-label="languageLabel"><option value="en">English</option><option value="tr">Türkçe</option></select></label>
 </div></header>
 <main><div class="wrap article">
-<a class="article-back" href="writing.html">← Back to Writing</a>
+<a class="article-back" href="writing.html" data-i18n="backToWriting">← Back to Writing</a>
 <header class="article-header">
 <h1>Self-Destructing Art (Auto-destructive Art)</h1>
-<p class="article-meta">By Taha Başdemir</p>
+<p class="article-meta" data-i18n="byTaha">By Taha Başdemir</p>
 </header>
-<div class="article-body">
+<div class="article-body" lang="en">
 <p>To clarify the concept of self-destructing art, a clear image of destruction in art must be drawn. Kazimir Malevich argues that destruction is an inevitable part of existence and so, to create indestructible art, an artist must create the image of destruction itself. Malevich believes to have achieved this with his famous suprematist painting Black Square. An image of nonexistence itself gives way to it being indestructible since it symbolizes nothing and shows the eventual end of everything, which is nothingness. This is when the broad definition of destruction is attempted to be illustrated in art.</p>
 <p>Then what happens if the destruction of the artwork is inherent to itself? This leads to my concept of self-destructing artworks. Auto-destructive art is a term coined by Gustav Metzger. According to the manifestos released by Metzger himself, auto-destructive art must follow several key principles. First, there is time. Auto-destructive art must contain an agent within itself which leads to its destruction within twenty years. The second is self-completion. There is no restriction on how involved the artist is with the destruction of the art, even though the artist can start the process of the destruction, the destruction needs to finish by itself. Finally, participation. It must occur in a public space, and it cannot be consumed by a select group privately. Any artwork that follows these principles is considered auto-destructive art.</p>
 <p>I have chosen three artworks each with varying levels of audience participation and artist involvement. These three artworks all tie into the concept of auto-destructive art, interacting with it in wholly different ways.</p>
@@ -52,7 +53,8 @@
 <p>Circling back to Malevich’s belief about the Black Square, in my opinion, the artwork depicting destruction having a physical form is its fatal flaw. I believe art that depicts destruction should be as committed as possible and follow through with the destruction of itself.</p>
 </div>
 </main>
-<footer class="site"><div class="wrap">© <span id="y">2026</span> Taha Başdemir.</div></footer>
+<footer class="site"><div class="wrap"><span data-i18n="copyright">©</span> <span id="y">2026</span> Taha Başdemir.</div></footer>
+<script src="i18n.js"></script>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>

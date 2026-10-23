@@ -14,3 +14,6 @@ Static site, no build step. Plain HTML and CSS.
 
 ## Editing
 Search each page for `EDIT` comments. Replace `VIDEO_ID`, the email, profile links and photo files.
+
+## Languages
+Use the language selector in the header to switch between English and Turkish. The selected language is saved in the browser and applies across pages. Update the translations in `i18n.js`; published writing samples and video titles remain in their original language.

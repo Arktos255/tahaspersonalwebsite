@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Taha Başdemir</title>
-<meta name="description" content="Portfolio of Taha Başdemir: writing, video, photography, and social media work, Istanbul.">
+<title data-i18n="contactTitle">Contact — Taha Başdemir</title>
+<meta name="description" data-i18n="contactDescription" content="Portfolio of Taha Başdemir: writing, video, photography, and social media work, Istanbul.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F3FD6'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ET%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +14,19 @@
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="index.html">Taha Başdemir</a>
-<nav aria-label="Main">
-<a href="index.html">Home</a>
-<a href="videos.html">Videos</a>
-<a href="writing.html">Writing</a>
-<a href="photography.html">Photography</a>
-<a href="contact.html" aria-current="page">Contact</a>
+<nav aria-label="Main" data-i18n-aria-label="navLabel">
+<a href="index.html" data-i18n="navHome">Home</a>
+<a href="videos.html" data-i18n="navVideos">Videos</a>
+<a href="writing.html" data-i18n="navWriting">Writing</a>
+<a href="photography.html" data-i18n="navPhotography">Photography</a>
+<a href="contact.html" aria-current="page" data-i18n="navContact">Contact</a>
 </nav>
+<label class="language-switcher"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select id="language-selector" aria-label="Language" data-i18n-aria-label="languageLabel"><option value="en">English</option><option value="tr">Türkçe</option></select></label>
 </div></header>
 <main><div class="wrap">
 
-<h1>Contact</h1>
-<p class="lede">For writing, translation, video or social media work, email me. I reply in Turkish, English, or German.</p>
+<h1 data-i18n="contactHeading">Contact</h1>
+<p class="lede" data-i18n="contactLede">For writing, translation, video or social media work, email me. I reply in Turkish, English, or German.</p>
 <!-- EDIT: your email and profile links -->
 <p style="margin:2.5rem 0"><a class="mail" href="mailto:tahabasdemir@gmail.com">tahabasdemir@gmail.com</a></p>
 <ul class="links" style="max-width:24rem">
@@ -33,7 +34,8 @@
 <li><a href="https://www.youtube.com/@taha_basdemir">YouTube</a></li>
 </ul>
 </div></main>
-<footer class="site"><div class="wrap">© <span id="y">2026</span> Taha Başdemir.</div></footer>
+<footer class="site"><div class="wrap"><span data-i18n="copyright">©</span> <span id="y">2026</span> Taha Başdemir.</div></footer>
+<script src="i18n.js"></script>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>

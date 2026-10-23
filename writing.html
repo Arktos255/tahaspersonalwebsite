@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Writing — Taha Başdemir</title>
-<meta name="description" content="Portfolio of Taha Başdemir: writing, video, photography and social media work, Istanbul.">
+<title data-i18n="writingTitle">Writing — Taha Başdemir</title>
+<meta name="description" data-i18n="writingDescription" content="Portfolio of Taha Başdemir: writing, video, photography and social media work, Istanbul.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F3FD6'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ET%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +14,31 @@
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="index.html">Taha Başdemir</a>
-<nav aria-label="Main">
-<a href="index.html">Home</a>
-<a href="videos.html">Videos</a>
-<a href="writing.html" aria-current="page">Writing</a>
-<a href="photography.html">Photography</a>
-<a href="contact.html">Contact</a>
+<nav aria-label="Main" data-i18n-aria-label="navLabel">
+<a href="index.html" data-i18n="navHome">Home</a>
+<a href="videos.html" data-i18n="navVideos">Videos</a>
+<a href="writing.html" aria-current="page" data-i18n="navWriting">Writing</a>
+<a href="photography.html" data-i18n="navPhotography">Photography</a>
+<a href="contact.html" data-i18n="navContact">Contact</a>
 </nav>
+<label class="language-switcher"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select id="language-selector" aria-label="Language" data-i18n-aria-label="languageLabel"><option value="en">English</option><option value="tr">Türkçe</option></select></label>
 </div></header>
 <main><div class="wrap">
 
-<h1>Writing</h1>
-<p class="lede">Finished pieces: scripts, articles and copy.</p>
+<h1 data-i18n="writingHeading">Writing</h1>
+<p class="lede" data-i18n="writingLede">Finished pieces: scripts, articles and copy.</p>
 
 <section class="section-block">
-  <h2>English Writing</h2>
+  <h2 data-i18n="englishWritingHeading">English Writing</h2>
   <ul class="pieces">
-    <li><div><div class="where">Art theory</div></div><div><h3><a href="autodestructive.html">Self-Destructing Art (Auto-destructive Art)</a></h3><p>An essay exploring auto-destructive art, the role of destruction in artistic practice, and how works by Banksy, Tinguely, and David Best complicate the idea of permanence.</p></div></li>
-    <li><div><div class="where">Fiction</div></div><div><h3><a href="bitterburntblissful.html">Bitter, burnt, blissful.</a></h3><p>A fictional essay on coffee, desire, and the emotional pull of love songs in the middle of the night.</p></div></li>
-    <li><div><div class="where">Fiction</div></div><div><h3><a href="oleicacid.html">Oleic Acid</a></h3><p>A prose piece exploring alienation, self-loathing, morning routine, and the strange intimacy of a voice in your own head.</p></div></li>
+    <li><div><div class="where" data-i18n="artTheory">Art theory</div></div><div><h3><a href="autodestructive.html">Self-Destructing Art (Auto-destructive Art)</a></h3><p data-i18n="autoDestructiveSummary">An essay exploring auto-destructive art, the role of destruction in artistic practice, and how works by Banksy, Tinguely, and David Best complicate the idea of permanence.</p></div></li>
+    <li><div><div class="where" data-i18n="fiction">Fiction</div></div><div><h3><a href="bitterburntblissful.html">Bitter, burnt, blissful.</a></h3><p data-i18n="bitterSummary">A fictional essay on coffee, desire, and the emotional pull of love songs in the middle of the night.</p></div></li>
+    <li><div><div class="where" data-i18n="fiction">Fiction</div></div><div><h3><a href="oleicacid.html">Oleic Acid</a></h3><p data-i18n="oleicSummary">A prose piece exploring alienation, self-loathing, morning routine, and the strange intimacy of a voice in your own head.</p></div></li>
   </ul>
 </section>
 </div></main>
-<footer class="site"><div class="wrap">© <span id="y">2026</span> Taha Başdemir.</div></footer>
+<footer class="site"><div class="wrap"><span data-i18n="copyright">©</span> <span id="y">2026</span> Taha Başdemir.</div></footer>
+<script src="i18n.js"></script>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>

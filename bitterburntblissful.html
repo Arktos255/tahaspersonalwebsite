@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bitter, burnt, blissful. — Taha Başdemir</title>
-<meta name="description" content="Essay by Taha Başdemir titled Bitter, burnt, blissful.">
+<meta name="description" data-i18n="bitterDescription" content="Essay by Taha Başdemir titled Bitter, burnt, blissful.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F3FD6'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ET%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,21 +14,22 @@
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="index.html">Taha Başdemir</a>
-<nav aria-label="Main">
-<a href="index.html">Home</a>
-<a href="videos.html">Videos</a>
-<a href="writing.html" aria-current="page">Writing</a>
-<a href="photography.html">Photography</a>
-<a href="contact.html">Contact</a>
+<nav aria-label="Main" data-i18n-aria-label="navLabel">
+<a href="index.html" data-i18n="navHome">Home</a>
+<a href="videos.html" data-i18n="navVideos">Videos</a>
+<a href="writing.html" aria-current="page" data-i18n="navWriting">Writing</a>
+<a href="photography.html" data-i18n="navPhotography">Photography</a>
+<a href="contact.html" data-i18n="navContact">Contact</a>
 </nav>
+<label class="language-switcher"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select id="language-selector" aria-label="Language" data-i18n-aria-label="languageLabel"><option value="en">English</option><option value="tr">Türkçe</option></select></label>
 </div></header>
 <main><div class="wrap article">
-<a class="article-back" href="writing.html">← Back to Writing</a>
+<a class="article-back" href="writing.html" data-i18n="backToWriting">← Back to Writing</a>
 <header class="article-header">
 <h1>Bitter, burnt, blissful.</h1>
-<p class="article-meta">By Taha Başdemir</p>
+<p class="article-meta" data-i18n="byTaha">By Taha Başdemir</p>
 </header>
-<div class="article-body">
+<div class="article-body" lang="en">
 <p>It is 2.30 in the morning. I was about to close my eyes and try to get some sleep. However, right before I put my phone down and headed to bed, a cover of a familiar love song played. I got up like a man possessed. It wasn’t a particularly good cover either, very rough sounding. Something struck me.</p>
 <p>Not a particular aspect of anything the singer did but a culmination of everything she did. How her fingers danced across the strings of her guitar, how she closed her eyes while singing; almost as if she had been picturing someone, how her voice cracked when she reached the end. What I realize now is that I cannot relate to any of these songs. I am moved, hell, shaken to my core by them. These people, deeply hurt by love, write incredible songs about them. And here I am, completely clueless about love, clutching them close to my heart.</p>
 <p>I made myself an awful cup of instant coffee. The mug has on it, with silver writing: “Love is all you need.” The text mocks me. Still I pick up the mug and take a swig of the muggy liquid. It’s far from good and I’m not greeted by the usual warmth trailing down my throat but instead, a burning sensation that moves down into my stomach and stays there for a second before subsiding. Nevertheless, I take sip after sip.</p>
@@ -38,7 +39,8 @@
 <p>I didn’t drink any coffee at all for a while. After a big break like that, I woke up one day and had a hankering for that familiar taste. I looked at the espresso machine gathering dust in the kitchen corner and I had no energy for it. Every step that I deliberately went through now seemed insurmountably difficult. I got up, went to the kitchen and made myself a cup of instant coffee. It helped. I didn’t want any more coffee, but I also felt guilty. It didn’t taste right and felt like an insult, an easy way out. Someone who truly knew how to appreciate coffee would spit in my face. Even to this day, I believe I haven’t made the perfect cup of coffee. Who knows, perhaps one day I’ll have the energy to. But as it stands, supermarket mud water is all I’m getting. It’s late and the coffee didn’t really help. I should sleep.</p>
 </div>
 </main>
-<footer class="site"><div class="wrap">© <span id="y">2026</span> Taha Başdemir.</div></footer>
+<footer class="site"><div class="wrap"><span data-i18n="copyright">©</span> <span id="y">2026</span> Taha Başdemir.</div></footer>
+<script src="i18n.js"></script>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>

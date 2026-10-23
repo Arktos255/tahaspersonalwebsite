@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oleic Acid — Taha Başdemir</title>
-<meta name="description" content="A prose piece by Taha Başdemir titled Oleic Acid.">
+<meta name="description" data-i18n="oleicDescription" content="A prose piece by Taha Başdemir titled Oleic Acid.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F3FD6'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ET%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,21 +14,22 @@
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="index.html">Taha Başdemir</a>
-<nav aria-label="Main">
-<a href="index.html">Home</a>
-<a href="videos.html">Videos</a>
-<a href="writing.html" aria-current="page">Writing</a>
-<a href="photography.html">Photography</a>
-<a href="contact.html">Contact</a>
+<nav aria-label="Main" data-i18n-aria-label="navLabel">
+<a href="index.html" data-i18n="navHome">Home</a>
+<a href="videos.html" data-i18n="navVideos">Videos</a>
+<a href="writing.html" aria-current="page" data-i18n="navWriting">Writing</a>
+<a href="photography.html" data-i18n="navPhotography">Photography</a>
+<a href="contact.html" data-i18n="navContact">Contact</a>
 </nav>
+<label class="language-switcher"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select id="language-selector" aria-label="Language" data-i18n-aria-label="languageLabel"><option value="en">English</option><option value="tr">Türkçe</option></select></label>
 </div></header>
 <main><div class="wrap article">
-<a class="article-back" href="writing.html">← Back to Writing</a>
+<a class="article-back" href="writing.html" data-i18n="backToWriting">← Back to Writing</a>
 <header class="article-header">
 <h1>Oleic Acid</h1>
-<p class="article-meta">By Taha Başdemir</p>
+<p class="article-meta" data-i18n="byTaha">By Taha Başdemir</p>
 </header>
-<div class="article-body">
+<div class="article-body" lang="en">
 <p>Wake up.</p>
 <p>WAKE UP.</p>
 <p>Good. Well, a decent try at least. At least your consciousness is aware of the meat sack laying on this futon. A meat sack with back pain. Great. Your father told you to get a mattress but minimalism, right?</p>
@@ -55,7 +56,8 @@
 <p>Well, go on then! Whoever’s on the other end of that line must be getting bored already. It’s coming from the couch. Maybe it’s in between the couch pillows? No? Maybe it got stuck in the armrest like last week? Also no.</p>
 </div>
 </main>
-<footer class="site"><div class="wrap">© <span id="y">2026</span> Taha Başdemir.</div></footer>
+<footer class="site"><div class="wrap"><span data-i18n="copyright">©</span> <span id="y">2026</span> Taha Başdemir.</div></footer>
+<script src="i18n.js"></script>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>
