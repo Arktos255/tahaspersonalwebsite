@@ -29,21 +29,33 @@
 <h1 data-i18n="photographyHeading">Photography</h1>
 <p class="lede" data-i18n="photographyLede">Photographs from Istanbul and beyond. Entirely on film.</p>
 <div class="photos" id="photo-gallery">
-<figure><img src="photos (6).jpg" alt="Photo 6" data-i18n-alt="photo6" loading="lazy"></figure>
-<figure><img src="photos (8).jpg" alt="Photo 8" data-i18n-alt="photo8" loading="lazy"></figure>
-<figure><img src="photos (2).jpg" alt="Photo 2" data-i18n-alt="photo2" loading="lazy"></figure>
-<figure><img src="photos (5).jpg" alt="Photo 5" data-i18n-alt="photo5" loading="lazy"></figure>
-<figure><img src="photos (10).jpg" alt="Photo 10" data-i18n-alt="photo10" loading="lazy"></figure>
-<figure><img src="photos (1).jpg" alt="Photo 1" data-i18n-alt="photo1" loading="lazy"></figure>
-<figure><img src="photos (7).jpg" alt="Photo 7" data-i18n-alt="photo7" loading="lazy"></figure>
-<figure><img src="photos (11).jpg" alt="Photo 11" data-i18n-alt="photo11" loading="lazy"></figure>
-<figure><img src="photos (4).JPG" alt="Photo 4" data-i18n-alt="photo4" loading="lazy"></figure>
-<figure><img src="photos (9).jpg" alt="Photo 9" data-i18n-alt="photo9" loading="lazy"></figure>
-<figure><img src="photos (3).jpg" alt="Photo 3" data-i18n-alt="photo3" loading="lazy"></figure>
+<figure><button class="photo-open" type="button"><img src="photos (6).jpg" alt="Photo 6" data-i18n-alt="photo6" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (8).jpg" alt="Photo 8" data-i18n-alt="photo8" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (2).jpg" alt="Photo 2" data-i18n-alt="photo2" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (5).jpg" alt="Photo 5" data-i18n-alt="photo5" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (10).jpg" alt="Photo 10" data-i18n-alt="photo10" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (1).jpg" alt="Photo 1" data-i18n-alt="photo1" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (7).jpg" alt="Photo 7" data-i18n-alt="photo7" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (11).jpg" alt="Photo 11" data-i18n-alt="photo11" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (4).JPG" alt="Photo 4" data-i18n-alt="photo4" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (9).jpg" alt="Photo 9" data-i18n-alt="photo9" loading="lazy"></button></figure>
+<figure><button class="photo-open" type="button"><img src="photos (3).jpg" alt="Photo 3" data-i18n-alt="photo3" loading="lazy"></button></figure>
 </div>
+<dialog class="photo-lightbox" id="photo-lightbox" aria-labelledby="photo-lightbox-title">
+<div class="photo-lightbox-header">
+<h2 id="photo-lightbox-title" data-i18n="photoLightboxLabel">Photo viewer</h2>
+<button class="photo-lightbox-close" type="button" aria-label="Close photo viewer" data-i18n-aria-label="photoLightboxClose">×</button>
+</div>
+<div class="photo-lightbox-stage">
+<button class="photo-lightbox-previous" type="button" aria-label="Previous photo" data-i18n-aria-label="photoLightboxPrevious">←</button>
+<img class="photo-lightbox-image" alt="">
+<button class="photo-lightbox-next" type="button" aria-label="Next photo" data-i18n-aria-label="photoLightboxNext">→</button>
+</div>
+</dialog>
 </div></main>
 <footer class="site"><div class="wrap"><span data-i18n="copyright">©</span> <span id="y">2026</span> Taha Başdemir.</div></footer>
 <script src="i18n.js"></script>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+<script src="photo-lightbox.js"></script>
 </body>
 </html>

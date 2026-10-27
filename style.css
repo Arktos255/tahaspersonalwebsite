@@ -85,7 +85,21 @@ main{flex:1 0 auto;padding:3.5rem 0 5rem}
 .photos{columns:18rem;column-gap:1rem;margin-top:2.5rem}
 .photos figure{margin:0 0 1rem;break-inside:avoid;background:var(--panel);border-radius:4px;overflow:hidden}
 .photos img{display:block;width:100%;height:auto;min-height:10rem;color:transparent}
+.photo-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+.photo-open img{transition:filter .2s ease}
+.photo-open:hover img{filter:brightness(.85)}
 .photos figcaption{padding:.5rem .75rem;color:var(--muted);font-size:1rem}
+.photo-lightbox{position:fixed;inset:0;width:auto;max-width:none;height:auto;max-height:none;margin:0;padding:clamp(1rem,3vw,2rem);overflow:hidden;overscroll-behavior:contain;border:0;background:rgba(13,26,23,.97);color:var(--ink)}
+.photo-lightbox::backdrop{background:rgba(0,0,0,.88)}
+.photo-lightbox[open]{display:flex;flex-direction:column;gap:1rem}
+.photo-lightbox-header{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.photo-lightbox-header h2{font-size:1.1rem}
+.photo-lightbox-close,.photo-lightbox-previous,.photo-lightbox-next{display:inline-flex;flex:0 0 2.75rem;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;min-width:2.75rem;min-height:2.75rem;padding:0;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--ink);font:500 1.5rem/1 var(--head);cursor:pointer}
+.photo-lightbox-close{font-size:1.75rem}
+.photo-lightbox-stage{display:grid;flex:1;grid-template-columns:2.75rem minmax(0,1fr) 2.75rem;align-items:center;gap:clamp(.25rem,2vw,1rem);min-width:0;min-height:0}
+.photo-lightbox-image{display:block;justify-self:center;max-width:min(100%,80rem);max-height:calc(100dvh - 11rem);width:auto;height:auto;object-fit:contain}
+@media (max-width:35rem){.photo-lightbox{padding:.75rem}.photo-lightbox-stage{gap:.25rem}.photo-lightbox-image{max-width:100%;max-height:calc(100dvh - 9rem)}}
+@media (prefers-reduced-motion:reduce){.photo-open img{transition:none}}
 /* contact */
 .mail{font:700 clamp(1.5rem,4.5vw,2.75rem) var(--head);letter-spacing:-.02em;word-break:break-all}
 footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:1rem}
