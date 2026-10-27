@@ -1,6 +1,7 @@
 const translations = {
   en: {
     navLabel: "Main navigation",
+    menuToggle: "Toggle navigation menu",
     languageLabel: "Language",
     navHome: "Home",
     navVideos: "Videos",
@@ -77,6 +78,7 @@ const translations = {
   },
   tr: {
     navLabel: "Ana gezinme",
+    menuToggle: "Gezinme menüsünü aç/kapat",
     languageLabel: "Dil",
     navHome: "Ana Sayfa",
     navVideos: "Videolar",
@@ -188,3 +190,39 @@ languageSelector.addEventListener("change", () => {
   localStorage.setItem("siteLanguage", languageSelector.value);
   applyLanguage(languageSelector.value);
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNavigation = document.getElementById("site-navigation");
+
+if (menuToggle && siteNavigation) {
+  const siteHeader = menuToggle.closest("header.site");
+  siteHeader.classList.add("mobile-navigation-ready");
+
+  const setNavigationOpen = (isOpen) => {
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    siteNavigation.classList.toggle("is-open", isOpen);
+  };
+
+  menuToggle.addEventListener("click", () => {
+    setNavigationOpen(menuToggle.getAttribute("aria-expanded") !== "true");
+  });
+
+  siteNavigation.addEventListener("click", (event) => {
+    if (event.target instanceof Element && event.target.closest("a")) {
+      setNavigationOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+      setNavigationOpen(false);
+      menuToggle.focus();
+    }
+  });
+
+  window.matchMedia("(min-width: 48rem)").addEventListener("change", (event) => {
+    if (event.matches) {
+      setNavigationOpen(false);
+    }
+  });
+}
