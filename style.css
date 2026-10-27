@@ -2,7 +2,7 @@
 --head:"Bricolage Grotesque",system-ui,sans-serif;--body:"Noto Serif",Georgia,serif}
 *{box-sizing:border-box}
 html{scroll-padding-top:5rem}
-body{margin:0;background:var(--bg);color:var(--ink);font:1.2rem/1.65 var(--body)}
+body{min-height:100vh;min-height:100dvh;margin:0;background:var(--bg);color:var(--ink);font:1.2rem/1.65 var(--body);display:flex;flex-direction:column}
 a{color:var(--accent);text-underline-offset:.2em}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
 .wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
@@ -29,7 +29,7 @@ header.site .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;align-it
 }
 h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
 h1{font-size:clamp(2.25rem,5vw,3.5rem);letter-spacing:-.02em}
-main{padding:3.5rem 0 5rem}
+main{flex:1 0 auto;padding:3.5rem 0 5rem}
 .lede{color:var(--muted);max-width:40rem;margin:1rem 0 0}.section-block{margin-top:3rem}.section-block h2{margin:0 0 1.5rem;font-size:clamp(1.5rem,3vw,2.2rem)}
 /* home: the same sentence in four languages */
 .hero{display:grid;gap:0;margin:0 0 3rem;padding:0;list-style:none}
